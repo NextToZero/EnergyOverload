@@ -1,6 +1,8 @@
 package com.tayjay.energyoverload;
 
+import com.tayjay.energyoverload.proxy.IProxy;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -14,6 +16,9 @@ public class EnergyOverload
 {
     @Mod.Instance("EnergyOverload")
     public static EnergyOverload instance;
+
+    @SidedProxy(clientSide = "com.tayjay.energyoverload.ClientProxy", serverSide = "com.tayjay.energyoverload.ServerProxy")
+    public static IProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
