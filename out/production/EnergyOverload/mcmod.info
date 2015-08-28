@@ -1,0 +1,19 @@
+[
+{
+"modid": "EnergyOverload",
+"name": "Energy Overload",
+"description": "The acquisition and manipulation of massive amounts of energy.",
+"version": "0.1",
+"credits": "",
+"logoFile": "",
+"mcversion": "1.7.10",
+"url": "",
+"updateUrl": "",
+"authors": [ "tayjay" ],
+"parent":"",
+"screenshots": [],
+"dependencies": [
+"mod_MinecraftForge"
+]
+}
+]
